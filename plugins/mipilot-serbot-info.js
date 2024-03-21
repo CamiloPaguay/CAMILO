@@ -44,6 +44,6 @@ ${replyMessage.trim()}`.trim();
 
   await _envio.sendMessage(m.chat, {text: responseMessage, mentions: _envio.parseMention(responseMessage)}, {quoted: m});
 }
-handler.command = handler.help = ['listjadibot', 'bots', 'subsbots'];
+handler.command = handler.help = ['Daniabotlistjadibot', 'Daniabotbots', 'Daniabotsubsbots'];
 handler.tags = ['jadibot'];
 export default handler;
