@@ -16,26 +16,10 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (/^que no$/i.test(m.text) && !chat.isBanned) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/queno.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
   if (!chat.isBanned && m.text.match(/(anadieleimporta|a nadie le importa)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = './media/dylan1.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
-  if (!chat.isBanned && m.text.match(/(araara|ara ara)/gi)) { 
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/Ara.mp3';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
@@ -152,22 +136,6 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (!chat.isBanned && m.text.match(/(gemidos|gemime|gime|gemime|gemi2)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/gemi2.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
-  if (!chat.isBanned && m.text.match(/(audio hentai|Audio hentai|audiohentai|Audiohentai)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/hentai.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
   if (!chat.isBanned && m.text.match(/(sexo|Sexo|Hora de sexo|hora de sexo)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
@@ -216,14 +184,6 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (!chat.isBanned && m.text.match(/(Nyapasu|Nyanpasu|nyapasu|Nyapasu|Gambure|Yabure)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/otaku.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
   if (!chat.isBanned && m.text.match(/(ho me vengo|oh me vengo|o me vengo|Ho me vengo|Oh me vengo|O me vengo)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
@@ -236,22 +196,6 @@ handler.all = async function(m, {conn}) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = './media/Onichan.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
-  if (!chat.isBanned && m.text.match(/(Pasa pack|vendes tu nudes|pasa video hot|pasa tu pack|pasa fotos hot|vendes tu pack|Vendes tu pack|Vendes tu pack?|vendes tu pack|Pasa Pack Bot|pasa pack Bot|pasa tu pack Bot|PÃ¡same tus fotos desnudas|pÃ¡same tu pack|me pasas tu pak|me pasas tu pack|pasa pack)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/Elmo.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
-  if (!chat.isBanned && m.text.match(/(QuiÃ©n es tu senpai botsito 7u7|Quien es tu senpai botsito 7u7|QuiÃ©n es tu sempai botsito 7u7|Quien es tu sempai botsito 7u7|QuiÃ©n es tu senpai botsito 7w7|Quien es tu senpai botsito 7w7|quiÃ©n es tu senpai botsito 7u7|quien es tu senpai botsito 7u7|QuiÃ©n es tu sempai botsito 7w7|Quien es tu sempai botsito 7w7|QuiÃ©n es tu senpai botsito|Quien es tu senpai botsito|QuiÃ©n es tu sempai botsito|Quien es tu sempai botsito|QuiÃ©n es tu senpai botsito|Quien es tu senpai botsito|quiÃ©n es tu senpai botsito|quien es tu senpai botsito|QuiÃ©n es tu sempai botsito|Quien es tu sempai botsito)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/Tu.mp3';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
@@ -328,26 +272,10 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (!chat.isBanned && m.text.match(/(Yamete|yamete|Yamete kudasai|yamete kudasai)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/Yamete-kudasai.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
   if (!chat.isBanned && m.text.match(/(epico|esto va a ser epico)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = './media/Epico.mp3';
-    mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-  }
-
-  if (!chat.isBanned && m.text.match(/(shitpost)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/shitpost.mp3';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
