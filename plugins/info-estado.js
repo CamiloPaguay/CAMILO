@@ -5,9 +5,6 @@ import sizeFormatter from "human-readable";
 import MessageType from "@whiskeysockets/baileys";
 import fs from "fs";
 import { performance } from "perf_hooks";
-import _translate from "./_translate.js"
-const tradutor = _translate.plugins.info_estado
-
 const handler = async (m, { conn, usedPrefix }) => {
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
@@ -25,32 +22,33 @@ const handler = async (m, { conn, usedPrefix }) => {
   const old = performance.now();
   const neww = performance.now();
   const rtime = (neww - old).toFixed(7);
-  const wm = 'The Mystic Bot';
-  const info = ` ${tradutor.texto1[0]}
+  const wm = 'May-Bot';
+  const info = `           _*INFO - ESTADO*_
 
-  ${tradutor.texto1[1]} Bruno Sobrino
-  ${tradutor.texto1[2]} +5219992095479
-  ${tradutor.texto1[3]} paypal.me/TheShadowBrokers133
+👥•  _*Propi:*_ ANNA Y CAMILO
+📞•  _*WA:*_ +573239900113
+💳•  _*PayPal:*_ www.paypal.me/camildaza  
+https://www.paypal.me/MayGarcia772
 
-  ${tradutor.texto1[4]} ${rtime}
-  ${tradutor.texto1[5]} ${uptime}
-  ${tradutor.texto1[6]} ${usedPrefix}
-  ${tradutor.texto1[7]} ${self ? "privado" : "público"}
-  ${tradutor.texto1[8]} ${totalusrReg}
-  ${tradutor.texto1[9]} ${totalusr}
-  ${tradutor.texto1[10]} ${(conn.user.jid == global.conn.user.jid ? '' : `Sub-bot de:\n ▢ +${global.conn.user.jid.split`@`[0]}`) || 'No es sub-bot'}
+🏓•  _*Ping:*_ ${rtime}
+⏱️•  _*Uptime:*_ ${uptime}
+⚙️•  _*Prefijo:*_ ${usedPrefix}
+🔒•  _*Modo:*_ ${self ? "privado" : "público"}
+👤•  _*Usuarios regs:*_ ${totalusrReg}
+👥•  _*Usuarios totales:*_ ${totalusr}
+🤖•  _*Tipo de bot:*_ ${(conn.user.jid == global.conn.user.jid ? '' : `Sub-bot de:\n ▢ +${global.conn.user.jid.split`@`[0]}`) || 'No es sub-bot'}
  
-  ${tradutor.texto1[11]} ${chats.length - groups.length}
-  ${tradutor.texto1[12]} ${groups.length}
-  ${tradutor.texto1[13]} ${chats.length}
+💬•  _*Chats privados:*_ ${chats.length - groups.length}
+👥•  _*Grupos:*_ ${groups.length}
+💬•  _*Chats totales:*_ ${chats.length}
  
-  ${tradutor.texto1[14]} ${autoread ? "activo" : "desactivado"}
-  ${tradutor.texto1[15]} ${restrict ? "activo" : "desactivado"}
-  ${tradutor.texto1[16]} ${pconly ? "activado" : "desactivado"}
-  ${tradutor.texto1[17]} ${gconly ? "activado" : "desactivado"}
-  ${tradutor.texto1[18]} ${antiprivado ? "activado" : "desactivado"}
-  ${tradutor.texto1[19]} ${antiCall ? "activado" : "desactivado"}
-  ${tradutor.texto1[20]} ${modejadibot ? "activado" : "desactivado"}`.trim();
+👀•  _*Autoread:*_ ${autoread ? "activo" : "desactivado"}
+🔒•  _*Restrict:*_ ${restrict ? "activo" : "desactivado"}
+💻•  _*Pconly:*_ ${pconly ? "activado" : "desactivado"}
+👥•  _*Gponly:*_ ${gconly ? "activado" : "desactivado"}
+🔒•  _*AntiPrivado:*_ ${antiprivado ? "activado" : "desactivado"}
+📵•  _*AntiLlamada:*_ ${antiCall ? "activado" : "desactivado"}
+🤖•  _*ModeJadiBot:*_ ${modejadibot ? "activado" : "desactivado"}`.trim();
   const doc = [
     "pdf",
     "zip",
@@ -69,13 +67,13 @@ const handler = async (m, { conn, usedPrefix }) => {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        mediaUrl: "https://github.com",
         mediaType: 2,
         previewType: "pdf",
-        title: "The Mystic - Bot",
-        body: tradutor.texto2,
+        title: "May - Bot",
+        body: "Repositorio - GitHub",
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        sourceUrl: "https://github.com",
       },
     },
     caption: info,
@@ -85,7 +83,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   conn.sendMessage(m.chat, Message, { quoted: m });
 };
 
-handler.command = /^(ping|info|status|estado)$/i;
+handler.command = /^(ping|info|status|estado|infobot|INFOBOT)$/i;
 export default handler;
 
 function clockString(ms) {
