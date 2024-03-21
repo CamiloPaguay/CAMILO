@@ -9,7 +9,7 @@ async function handler(m, {usedPrefix}) {
         await m.reply(`*No tienes ningun token activo, usa ${usedPrefix}jadibot para crear uno.*`)
     }
   }
-  handler.command = handler.help = ['token', 'gettoken', 'serbottoken'];
+  handler.command = handler.help = ['Daniabottoken', 'Daniabotgettoken', 'Daniabotserbottoken'];
   handler.tags = ['Daniabot'];
   handler.private = true
   export default handler;
