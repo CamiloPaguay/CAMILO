@@ -1,6 +1,4 @@
 // TheMystic-Bot-MD@BrunoSobrino - _antiprivado.js
-import _translate from "./_translate.js" // Chamando o Modulo
-const tradutor = _translate.plugins._antiprivado // Acessar somente os texto _antiprivado
 
 export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
   if (m.isBaileys && m.fromMe) return !0;
@@ -10,8 +8,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
   const chat = global.db.data.chats[m.chat];
   const bot = global.db.data.settings[this.user.jid] || {};
   if (bot.antiPrivate && !isOwner && !isROwner) {
-    await m.reply(tradutor.texto1, false, {mentions: [m.sender]});
-    await this.updateBlockStatus(m.chat, 'block');
+    await this.updateBlockStatus(m.sender, 'block'); // Solo bloquea al remitente del mensaje privado
   }
   return !1;
 }
