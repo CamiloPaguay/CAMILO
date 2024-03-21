@@ -1,53 +1,39 @@
-import _translate from "./_translate.js"
-const tradutor = _translate.plugins.info_creador
-
 const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `${tradutor.texto1[0]}
-
-  ${tradutor.texto1[1]}
-
-  ${tradutor.texto1[2]}
-
-  ${tradutor.texto1[3]}
-
-  ${tradutor.texto1[4]}
-
-  ${tradutor.texto1[5]}
-
-  ${tradutor.texto1[6]}
-
-  ${tradutor.texto1[7]}
-
-  ${tradutor.texto1[8]}
-
-  ${tradutor.texto1[9]}
-
-  ${tradutor.texto1[10]}
-
-  ${tradutor.texto1[11]}
-
-  ${tradutor.texto1[12]}
-  
-  ${tradutor.texto1[13]}`.trim();
+  const text = `
+  ╭────═[ *𝘾𝙍𝙀𝘼𝘿𝙊𝙍* ]═─────⋆
+│╭───────────────···
+┴│✯ *🗳️ ɴᴏᴍʙʀᴇ* : ANA
+✩│✯  𝙉𝙧𝙤 : 
+✯│✯ wa.me/573192424275
+✩│✯  𝙀𝙡 𝙚𝙨 𝙢𝙞 𝙘𝙧𝙚𝙖𝙙𝙤𝙧 :3
+┬ ʀᴇᴄᴜᴇʀᴅᴀ ɴᴏ ᴅᴇʙᴇꜱ
+│ ᴇꜱᴄʀɪʙɪʀʟᴇ ᴀ ᴍɪ ᴄʀᴇᴀᴅᴏʀ ᴀ
+│ ᴍᴇɴᴏꜱ Qᴜᴇ ꜱᴇᴀ ᴅᴇ ᴍᴜᴄʜᴀ
+│ ᴜʀɢᴇɴᴄɪᴀ ꜱɪ Qᴜɪᴇʀᴇ ʜᴀʙʟᴀʀ ᴇꜱ
+│ ᴄᴏɴ ᴍɪ ᴍᴏᴅᴇʀᴀᴅᴏʀᴀ ᴄᴏɴ ᴇʟ
+│ ᴄᴏᴍᴀɴᴅᴏ:
+│ ✯ .𝘮𝘰𝘥𝘦𝘳𝘢𝘥𝘰𝘳𝘢 , .𝘮𝘰𝘥
+╰───────────═┅═──────
+  `.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    'document': {url: `https://github.com/Akanksh/`},
     'mimetype': `application/${document}`,
-    'fileName': `${tradutor.texto2[0]}`,
+    'fileName': `「  𝙎𝙊𝙇𝙊 𝙈𝘼𝙔-𝘽𝙊𝙏 」`,
     'fileLength': 99999999999999,
-    'pageCount': 200,
+    'pageCount': 1,
     'contextInfo': {
-      'forwardingScore': 200,
+      'forwardingScore': 2,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        'mediaUrl': 'https://github.com/Akanksh',
         'mediaType': 2,
         'previewType': 'pdf',
-        'title': tradutor.texto2[1],
+        'title': '𝙈𝘼𝙔-𝘽𝙊𝙏',
         'body': wm,
         'thumbnail': imagen1,
-        'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
+        'sourceUrl': 'https://www.youtube.com/watch?v=-yc54n9Tv5A'}},
     'caption': text,
     'footer': wm,
     // 'buttons':[
