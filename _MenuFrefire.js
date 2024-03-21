@@ -1,6 +1,6 @@
 const handler = async (m, {conn, usedPrefix}) => {
   try {
-    const pp = imagen2;
+    const pp = imagen3;
     const str = `
 🔮 𝙈𝘼𝙔-𝘽𝙊𝙏 🔮
     
