@@ -5,7 +5,7 @@ async function handler(m, {conn, usedPrefix}) {
    conn.fstop = true
    conn.ws.close()
 }
-handler.command = handler.help = ['stop', 'byebot'];
+handler.command = handler.help = ['Daniabotstop', 'Daniabotbyebot'];
 handler.tags = ['jadibot'];
 handler.owner = true
 export default handler; 
