@@ -26,7 +26,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ╭━━━━━━ ◜◌◝ ━━━━━━╮
 │ *<𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎𝐒/>*
 │
-├ •🔊 _Quien es tu sempai botsito 7w7_
 ├ •🔊 _Te diagnostico con gay_
 ├ •🔊 _No digas eso papu_
 ├ •🔊 _A nadie le importa_
@@ -38,11 +37,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ├ •🔊 _Buenos dias_
 ├ •🔊 _Buenos tardes_
 ├ •🔊 _Buenos noches_
-├ •🔊 _Audio hentai_
 ├ •🔊 _Chica lgante_
 ├ •🔊 _Feliz navidad_
 ├ •🔊 _Vete a la vrg_
-├ •🔊 _Pasa pack Bot_
 ├ •🔊 _Atencion grupo_
 ├ •🔊 _Marica quien_
 ├ •🔊 _Murio el grupo_
@@ -50,24 +47,16 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ├ •🔊 _tio que rico_
 ├ •🔊 _Viernes_
 ├ •🔊 _Baneado_
-├ •🔊 _Sexo_
-├ •🔊 _Hola_
 ├ •🔊 _Un pato_
-├ •🔊 _Nyanpasu_
 ├ •🔊 _Te amo_
-├ •🔊 _Yamete_
 ├ •🔊 _Bañate_
 ├ •🔊 _Es puto_
 ├ •🔊 _La biblia_
-├ •🔊 _Onichan_
 ├ •🔊 _Mierda de Bot_
 ├ •🔊 _Siuuu_
 ├ •🔊 _Epico_
-├ •🔊 _Shitpost_
 ├ •🔊 _Rawr_
 ├ •🔊 _UwU_
-├ •🔊 _:c_
-├ •🔊 _a_
 ╰━━━━━━━━━━━━━━━━╯`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
