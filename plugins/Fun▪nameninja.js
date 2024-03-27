@@ -1,6 +1,6 @@
 function handler(m, { text }) {
     let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
-    m.reply(teks.replace(/[a-z]/gi, v => {
+    m.reply(teks.replace(/[a-zA-Z]/g, v => {
         return {
             'a': 'ka',
             'b': 'tsu',
@@ -27,13 +27,40 @@ function handler(m, { text }) {
             'w': 'mei',
             'x': 'na',
             'y': 'fu',
-            'z': 'mori'
-        }[v.toLowerCase()] || v
+            'z': 'mori',
+            'A': '𝘼',
+            'B': '𝘽',
+            'C': '𝘾',
+            'D': '𝘿',
+            'E': '𝙀',
+            'F': '𝙁',
+            'G': '𝙂',
+            'H': '𝙃',
+            'I': '𝙄',
+            'J': '𝙅',
+            'K': '𝙆',
+            'L': '𝙇',
+            'M': '𝙈',
+            'N': '𝙉',
+            'Ñ': 'Ñ',
+            'O': '𝙊',
+            'P': '𝙋',
+            'Q': '𝙌',
+            'R': '𝙍',
+            'S': '𝙎',
+            'T': '𝙏',
+            'U': '𝙐',
+            'V': '𝙑',
+            'W': '𝙒',
+            'X': '𝙓',
+            'Y': '𝙔',
+            'Z': '𝙕'
+        }[v] || v
     }))
 }
-handler.help = ['nombreninja *<texto>*']
+handler.help = ['letrasbonitas *<texto>*']
 handler.tags = ['fun']
-handler.command = ['nombreninja', 'nameninja']
+handler.command = ['letras1', 'letrasbonitas']
 handler.register = true
 
 export default handler
