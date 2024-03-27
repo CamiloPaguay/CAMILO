@@ -2,32 +2,33 @@ function handler(m, { text }) {
     let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
     m.reply(teks.replace(/[a-zA-Z]/g, v => {
         return {
-            'a': 'ka',
-            'b': 'tsu',
-            'c': 'mi',
-            'd': 'te',
-            'e': 'ku',
-            'f': 'hi',
-            'g': 'ji',
-            'h': 'ri',
-            'i': 'ki',
-            'j': 'zu',
-            'k': 'me',
-            'l': 'ta',
-            'm': 'rin',
-            'n': 'to',
-            'o': 'mo',
-            'p': 'no',
-            'q': 'ke',
-            'r': 'shi',
-            's': 'ari',
-            't': 'chi',
-            'u': 'do',
-            'v': 'ru',
-            'w': 'mei',
-            'x': 'na',
-            'y': 'fu',
-            'z': 'mori',
+            'a': '𝙖',
+            'b': '𝙗',
+            'c': '𝙘',
+            'd': '𝙙',
+            'e': '𝙚',
+            'f': '𝙛',
+            'g': '𝙜',
+            'h': '𝙝',
+            'i': '𝙞',
+            'j': '𝙟',
+            'k': '𝙠',
+            'l': '𝙡',
+            'm': '𝙢',
+            'n': '𝙣',
+            'ñ': 'ñ',
+            'o': '𝙤',
+            'p': '𝙥',
+            'q': '𝙦',
+            'r': '𝙧',
+            's': '𝙨',
+            't': '𝙩',
+            'u': '𝙪',
+            'v': '𝙫',
+            'w': '𝙬',
+            'x': '𝙭',
+            'y': '𝙮',
+            'z': '𝙯',
             'A': '𝘼',
             'B': '𝘽',
             'C': '𝘾',
@@ -58,9 +59,9 @@ function handler(m, { text }) {
         }[v] || v
     }))
 }
-handler.help = ['letrasbonitas *<texto>*']
+handler.help = ['nombreninja *<texto>*']
 handler.tags = ['fun']
-handler.command = ['letras1', 'letrasbonitas']
+handler.command = ['nombreninja', 'nameninja']
 handler.register = true
 
 export default handler
