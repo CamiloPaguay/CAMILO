@@ -59,9 +59,9 @@ function handler(m, { text }) {
         }[v] || v
     }))
 }
-handler.help = ['nombreninja *<texto>*']
+handler.help = ['letras *<texto>*']
 handler.tags = ['fun']
-handler.command = ['nombreninja', 'nameninja']
+handler.command = ['letras1', 'Letras1']
 handler.register = true
 
 export default handler
