@@ -13,7 +13,7 @@ const handler = async (m, {conn, usedPrefix}) => {
 ├ • 📝 _${usedPrefix}letras2_ < 𝐓𝐞𝐱𝐭 >
 ├ • 🧮 _${usedPrefix}letras3_ < 𝗧𝗲𝘅𝘁 >
 ├ • 🏔️ _${usedPrefix}letras4_ < 𝘛𝘦𝘹𝘵 >
-├ • 🌊 _${usedPrefix}letras5_ < Text >
+├ • 🌊 _${usedPrefix}letras5_ < 𝕋𝕖𝕩𝕥 >
 ├ • 🐿️ _${usedPrefix}letras6_ < 𝑻𝒆𝒙𝒕 >
 ├ • 🧸 _${usedPrefix}letras7_ < 𝚃𝚎𝚡𝚝 >
 ├ • 🍄 _${usedPrefix}letras8_ < ᴛᴇxᴛ >
