@@ -16,7 +16,7 @@ async function handler(m, {usedPrefix}) {
         await m.reply(`${tradutor.texto2[0]} ${usedPrefix}jadibot ${tradutor.texto2[1]}`)
     }
   }
-  handler.command = handler.help = ['serbottoken'];
+  handler.command = handler.help = ['Daniaserbottoken'];
   handler.tags = ['jadibot'];
   handler.private = true
   export default handler;
