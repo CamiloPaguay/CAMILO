@@ -44,6 +44,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   
   🎵 _${usedPrefix}menuaudios_
   🍂 _${usedPrefix}MenuFreefire_
+  📝 _${usedPrefix}Menuletras_
   🏖️ _${usedPrefix}Menujuegos_
   📺 _${usedPrefix}menuanimes_
   📖 _${usedPrefix}labiblia_ (🔞)
