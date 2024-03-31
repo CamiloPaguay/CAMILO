@@ -59,7 +59,7 @@ function handler(m, { text }) {
         }[v] || v
     }))
 }
-handler.help = ['letras *<texto>*']
+handler.help = ['letras2 *<texto>*']
 handler.tags = ['fun']
 handler.command = ['letras2', 'Letras2']
 handler.register = true
