@@ -9,15 +9,15 @@ const handler = async (m, {conn, usedPrefix}) => {
 ╭━━━━━━ ◜◌◝ ━━━━━━╮
 │ _*< LISTA DE COMANDOS />*_
 │
-├ • 🏹 _${usedPrefix}letras1_ < Text >
-├ • 📝 _${usedPrefix}letras2_ < Text >
-├ • 🧮 _${usedPrefix}letras3_ < Text >
-├ • 🏔️ _${usedPrefix}letras4_ < Text >
+├ • 🏹 _${usedPrefix}letras1_ < 𝙏𝙚𝙭𝙩 >
+├ • 📝 _${usedPrefix}letras2_ < 𝐓𝐞𝐱𝐭 >
+├ • 🧮 _${usedPrefix}letras3_ < 𝗧𝗲𝘅𝘁 >
+├ • 🏔️ _${usedPrefix}letras4_ < 𝘛𝘦𝘹𝘵 >
 ├ • 🌊 _${usedPrefix}letras5_ < Text >
-├ • 🐿️ _${usedPrefix}letras6_ < Text >
-├ • 🧸 _${usedPrefix}letras7_ < Text >
-├ • 🍄 _${usedPrefix}letras8_ < Text >
-├ • 🍂 _${usedPrefix}letras9_ < Text >
+├ • 🐿️ _${usedPrefix}letras6_ < 𝑻𝒆𝒙𝒕 >
+├ • 🧸 _${usedPrefix}letras7_ < 𝚃𝚎𝚡𝚝 >
+├ • 🍄 _${usedPrefix}letras8_ < ᴛᴇxᴛ >
+├ • 🍂 _${usedPrefix}letras9_ < Ｔｅｘｔ >
 │
 ╰━━━━━━━━━━━━━━━━╯`.trim();
 
