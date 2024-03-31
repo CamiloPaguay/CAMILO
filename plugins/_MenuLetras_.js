@@ -9,20 +9,15 @@ const handler = async (m, {conn, usedPrefix}) => {
 ╭━━━━━━ ◜◌◝ ━━━━━━╮
 │ _*< LISTA DE COMANDOS />*_
 │
-├ • 🏹 _${usedPrefix}Reglaslideres_ 
-├ • 📝 _${usedPrefix}reglasinfi_ *< Text >* 
-├ • 🧮 _${usedPrefix}reglascompe_ *< Text >* 
-├ • 🏔️ _${usedPrefix}discord_ *< Text >*
-├ • 🌊 _${usedPrefix}insta_ *< Text >* 
-├ • 🐿️ _${usedPrefix}bloquescrim_ *< Text >* 
-├ • 🧸 _${usedPrefix}listavv2_ *< HORA >*
-├ • 🍄 _${usedPrefix}lista4vs4_ *< HORA >*
-├ • 🍂 _${usedPrefix}lista6vs6_ *< HORA >*
-├ • 📺 _${usedPrefix}lista8vs8_ *< H/C/R >*
-├ • 🍪 _${usedPrefix}lista12vs2_ *< H/C/R >*
-├ • 📖 _${usedPrefix}lista12vs12_ *< H/C/R >*
-├ • ✒️ _${usedPrefix}lista16vs16_ *< H/C/R >*
-├ • 📚 _${usedPrefix}listacuadri_ *< H/C/R >*
+├ • 🏹 _${usedPrefix}letras1_ < Text >
+├ • 📝 _${usedPrefix}letras2_ < Text >
+├ • 🧮 _${usedPrefix}letras3_ < Text >
+├ • 🏔️ _${usedPrefix}letras4_ < Text >
+├ • 🌊 _${usedPrefix}letras5_ < Text >
+├ • 🐿️ _${usedPrefix}letras6_ < Text >
+├ • 🧸 _${usedPrefix}letras7_ < Text >
+├ • 🍄 _${usedPrefix}letras8_ < Text >
+├ • 🍂 _${usedPrefix}letras9_ < Text >
 │
 ╰━━━━━━━━━━━━━━━━╯`.trim();
 
