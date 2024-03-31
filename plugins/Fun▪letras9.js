@@ -61,7 +61,7 @@ function handler(m, { text }) {
 }
 handler.help = ['letras *<texto>*']
 handler.tags = ['fun']
-handler.command = ['letras1', 'Letras1']
+handler.command = ['letras9', 'Letras9']
 handler.register = true
 
 export default handler
