@@ -65,5 +65,3 @@ handler.command = ['letras2', 'Letras2']
 handler.register = true
 
 export default handler
-
-export default handler
