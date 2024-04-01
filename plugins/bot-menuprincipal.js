@@ -5,7 +5,7 @@ const handler = async (m, { conn, text, participants }) => {
   const isMedia = /image|video|sticker|audio/.test(mime);
   const more = String.fromCharCode(8206);
   const masss = more.repeat(850);
-  const taguser = m.sender;
+  const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
   const htextos = `🔮 𝙈𝘼𝙔-𝘽𝙊𝙏 🔮
 
  📌 *Hola,* ${taguser}
