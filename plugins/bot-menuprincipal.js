@@ -58,5 +58,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     await conn.relayMessage(m.chat, { extendedTextMessage: { text: `${masss}\n${htextos}\n`, ...{ contextInfo: { externalAdReply: { title: '*[ ⚠ ] Advertencia*', body: '𝙈𝙖𝙮-𝘽𝙤𝙩', thumbnail: imagen1, sourceUrl: 'https://github.com/Anksawhs' } } } } }, { quoted: m });
   }
 };
+
 handler.command = /^(refran)$/i;
-export default handler;
+module.exports = handler;
