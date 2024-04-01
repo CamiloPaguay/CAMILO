@@ -1,4 +1,4 @@
-const handler = async (m, { conn, text, participants }) => {
+const handler = async (m, { conn, text, participants, isPrems }) => {
   const users = participants.map((u) => conn.decodeJid(u.id));
   const quoted = m.quoted ? m.quoted : m;
   const mime = (quoted.msg || quoted).mimetype || '';
@@ -6,6 +6,15 @@ const handler = async (m, { conn, text, participants }) => {
   const more = String.fromCharCode(8206);
   const masss = more.repeat(850);
   const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+  const level = global.db.data.users[m.sender].level || 1;
+  const exp = global.db.data.users[m.sender].exp || 0;
+  const role = global.db.data.users[m.sender].role || '';
+  const limit = global.db.data.users[m.sender].limit || 0;
+  const money = global.db.data.users[m.sender].money || 0;
+  const joincount = global.db.data.users[m.sender].joincount || 0;
+  const user = global.db.data.users[m.sender];
+  const readMore = more.repeat(850);
+
   const htextos = `🔮 𝙈𝘼𝙔-𝘽𝙊𝙏 🔮
 
  📌 *Hola,* ${taguser}
@@ -21,6 +30,7 @@ const handler = async (m, { conn, text, participants }) => {
  🎁 •  *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''} ${readMore}
  🏖️ •  *Adquiere el bot con:* ㅤㅤㅤㅤㅤㅤ+573239900113
 `;
+
   if ((isMedia && quoted.mtype === 'imageMessage') && htextos) {
     var mediax = await quoted.download?.();
     conn.sendMessage(m.chat, { image: mediax, mentions: users, caption: htextos, mentions: users }, { quoted: m });
