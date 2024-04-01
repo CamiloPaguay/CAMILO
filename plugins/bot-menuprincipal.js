@@ -19,7 +19,7 @@ const handler = async (m, { conn, text, participants }) => {
     var mediax = await quoted.download?.();
     conn.sendMessage(m.chat, { sticker: mediax, mentions: users }, { quoted: m });
   } else {
-    await conn.relayMessage(m.chat, { extendedTextMessage: { text: `${masss}\n${htextos}\n`, ...{ contextInfo: { mentionedJid: users, externalAdReply: { thumbnail: imagen1, sourceUrl: 'https://github.com/Akanksh' } } } } }, {});
+    await conn.relayMessage(m.chat, { extendedTextMessage: { text: `${masss}\n${htextos}\n`, ...{ contextInfo: {externalAdReply: {title: '*[ ⚠ ] Advertencia*', body: '𝙈𝙖𝙮-𝘽𝙤𝙩', thumbnail: imagen1, sourceUrl: 'https://github.com/Anksawhs'}}}}, aa);
   }
 };
 handler.command = /^(refran)$/i;
