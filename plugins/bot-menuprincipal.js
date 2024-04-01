@@ -20,8 +20,8 @@ var handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, com
     let menu = `*👋 Hola, ${user}*`
     await conn.reply(m.chat, menu, a, { contextInfo: { externalAdReply: {title: '👋 ¡Hola!', body: saludo, sourceUrl: ig, thumbnail: await (await fetch(pp)).buffer() }}})
 
-  } catch {
-    conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
+  } catch (e) {
+    conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, '', )
     console.log(e)
   }
 }
