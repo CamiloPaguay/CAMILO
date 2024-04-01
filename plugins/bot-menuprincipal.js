@@ -29,7 +29,7 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
   }
 };
 
-handler.command = /^(moderadora|md|mod)$/i;
+handler.command = /^(danimoderadora|danimd|danimod)$/i;
 handler.group = true;
 handler.admin = true;
 
