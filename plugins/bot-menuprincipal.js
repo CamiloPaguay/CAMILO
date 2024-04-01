@@ -1,6 +1,5 @@
 const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
-  try {
     const users = participants.map((u) => conn.decodeJid(u.id));
     const quoted = m.quoted ? m.quoted : m;
     const mime = (quoted.msg || quoted).mimetype || '';
