@@ -44,7 +44,7 @@ const handler = async (m, { conn, text, participants, isPrems }) => {
     var mediax = await quoted.download?.();
     conn.sendMessage(m.chat, { sticker: mediax, mentions: users }, { quoted: m });
   } else {
-    await conn.relayMessage(m.chat, { extendedTextMessage: { text: `${masss}\n${htextos}\n`, ...{ contextInfo: { externalAdReply: { title: '*[ ⚠ ] Advertencia*', body: '𝙈𝙖𝙮-𝘽𝙤𝙩', thumbnail: imagen1, sourceUrl: 'https://chat.whatsapp.com/HCwHgbB4GiQDQ4vmrxdjCC' } } } } }, { quoted: m });
+    await conn.relayMessage(m.chat, { extendedTextMessage: { text: `${masss}\n${htextos}\n`, ...{ contextInfo: { externalAdReply: { title: '*[ ⚠ ] Advertencia*', body: '𝙈𝙖𝙮-𝘽𝙤𝙩', thumbnail: imagen1, sourceUrl: 'https://github.com/Anksawhs' } } } } }, { quoted: m });
   }
 };
 handler.command = /^(refran)$/i;
