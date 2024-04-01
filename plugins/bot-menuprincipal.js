@@ -9,7 +9,7 @@ const handler = async (m, { conn, usedPrefix }) => {
 
     const { money, joincount } = global.db.data.users[m.sender];
     const taguser = '@' + m.sender.split('@')[0];
-    const pp = await conn.getProfilePicture(conn.user.jid);
+    const pp = await conn.getProfilePicture(conn.user.jid).then((res) => res || 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
 
     const str = `🔮 𝙈𝘼𝙔-𝘽𝙊𝙏 🔮\n\n🌩 *Nombre:* ${taguser}\n🌩 *Dólares:* ${joincount}\n🌩 *Nivel:* ${level}\n🌩 *Coins:* ${money}\n🌩 *Xp:* ${exp}`;
 
