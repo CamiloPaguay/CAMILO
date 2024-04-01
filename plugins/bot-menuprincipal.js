@@ -1,44 +1,23 @@
-//CÓDIGO ADAPTADO POR https://github.com/GataNina-Li | @gata_dios & https://github.com/AzamiJs | @Azami
+let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
+let handler = async function (m, { conn, text, usedPrefix, command }) {
+  let name2 = conn.getName(m.sender)
+  if (!Reg.test(text)) throw `${mg}✳️ 𝙐𝙨𝙤 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤: *${usedPrefix + command} nombre.edad*\n📌𝙀𝙟𝙚𝙢𝙥𝙡𝙤 : *${usedPrefix + command}* ${name2}.16`
+  let [_, name, splitter, age] = text.match(Reg)
+  if (!name) throw '✳️ 𝐄𝐥. 𝐧𝐨𝐦𝐛𝐫𝐞 𝐧𝐨 𝐩𝐮𝐞𝐝𝐞 𝐞𝐬𝐭𝐚𝐫 𝐯𝐚𝐜𝐢𝐨'
+  if (!age) throw '✳️ 𝐋𝐚 𝐞𝐝𝐚𝐝 𝐧𝐨 𝐩𝐮𝐞𝐝𝐞 𝐞𝐬𝐭𝐚 𝐯𝐚𝐜𝐢𝐚'
+  if (name.length >= 30) throw '✳️ 𝐅𝐮𝐚𝐚𝐚, 𝐪𝐮𝐞 𝐧𝐨𝐦𝐛𝐫𝐞 𝐭𝐚𝐥 𝐥𝐚𝐫𝐠𝐨𝐨𝐨𝐨𝐨' 
+  age = parseInt(age)
+  if (age > 100) throw '👴🏻 𝐏𝐚 𝐞𝐬𝐭𝐚 𝐯𝐢𝐞𝐣𝐨𝐬'
+  if (age < 5) throw '🚼  𝐕𝐫𝐠 𝐥𝐨𝐬 𝐛𝐞𝐛𝐞𝐬 𝐬𝐚𝐛𝐞𝐧 𝐞𝐬𝐜𝐫𝐢𝐛𝐢𝐫? ✍️😳 '
+  let sn = createHash('md5').update(m.sender).digest('hex')
+  await conn.reply(m.chat,  `⧼⧼⧼ *𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀𝐃𝐎* ⧽⧽⧽
 
-import fs from 'fs'
-import { parsePhoneNumber } from 'libphonenumber-js'
-import fetch from 'node-fetch'
-import { xpRange } from '../lib/levelling.js'
-const { levelling } = '../lib/levelling.js'
-import PhoneNumber from 'awesome-phonenumber'
-import { promises } from 'fs'
-import { join } from 'path'
-import moment from 'moment-timezone'
-import translate from '@vitalets/google-translate-api'
-const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
-
-var handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
-  try {
-    let user = conn.getName(m.sender)
-    let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-
-    let menu = `*👋 Hola, ${user}*`
-    await conn.reply(m.chat, menu, a, { contextInfo: { externalAdReply: {title: '👋 ¡Hola!', body: saludo, sourceUrl: ig, thumbnail: await (await fetch(pp)).buffer() }}})
-
-  } catch (e) {
-    conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, '', )
-    console.log(e)
-  }
+• *𝐍𝐨𝐦𝐛𝐫𝐞:* ${name}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+• *𝐄𝐝𝐚𝐝:* ${age} 𝐚𝐧̃𝐨𝐬
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈`, null, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: `𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀𝐃𝐎`, body: '', previewType: 0, thumbnail: img.getRandom(), sourceUrl: [nna, nn, md, yt, tiktok].getRandom()}}})
 }
-handler.help = ['menu']
-handler.tags = ['bot']
-handler.command = /^(danimenu)$/i
-handler.register = true
-
+handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
+handler.tags = ['xp']
+handler.command = /^(daniverify|daniverificar|daniregistrar|danireg(ister)?)$/i
 export default handler
-
-function clockString(ms) {
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}
-
-function pickRandom(list) {
-  return list[Math.floor(Math.random() * list.length)]
-}
