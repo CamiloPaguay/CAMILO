@@ -1,15 +1,15 @@
 [
     {
-        "question": "¿Qué le dice un pingüino a otro pingüino?",
-        "response": "Te quiero como a ningüino"
+        "question": "Adivina la película con emoji 🐠🔍🌊",
+        "response": "Buscando a Nemo"
     },
     {
-        "question": "¿Qué le dice un ciego a otro ciego?",
-        "response": "Después nos vemos"
+        "question": "Adivina la película con emoji 🐵🗽🚁",
+        "response": "King Kong"
     },
     {
-        "question": "¿En qué se parece un alfiler a un policía?",
-        "response": "En que los dos prenden"
+        "question": "Adivina la película con emoji 🤖🚗🌍",
+        "response": "Transformers"
     },
     {
         "question": "¿Qué se congela cuando se calienta?",
@@ -72,8 +72,8 @@
         "response": "El carbón"
     },
     {
-        "question": "¿Qué hay delante de ti siempre pero que no se puede ver?",
-        "response": "El futuro"
+        "question": "¿De qué color es el cielo?",
+        "response": "Azul"
     },
     {
         "question": "¿Qué mes tiene 28 días?",
@@ -152,12 +152,12 @@
         "response": "Tu nombre"
     },
     {
-        "question": "¿En qué momento una persona se convierte en fruta?",
-        "response": "Cuando espera"
+        "question": "¿Cuál es el nombre del autor de la obra Don Quijote de la Mancha?",
+        "response": "Miguel de Cervantes Saavedra"
     },
     {
-        "question": "Los padres de José tienen tres hijos: Luis, Raúl y…, ¿cómo se llama el tercero?",
-        "response": "José"
+        "question": "Adivina la película con emoji 🚗💨💥",
+        "response": "Rapidos y Furiosos"
     },
     {
         "question": "¿Qué palabra del diccionario se escribe incorrectamente?",
@@ -474,6 +474,63 @@
     {
        "question": "La capital Tiflis es un punto de interés en un país ubicado en la intersección de Europa y Asia, ¿cómo se llama este país?",
        "response": "Georgia"
+    },
+    {
+       "question": "¿Cuál es el animal más alto de la Tierra?",
+       "response": "La jirafa"
+    },
+    {
+       "question": "¿En qué año se inició la Segunda Guerra Mundial?",
+       "response": "1939"
+    },
+    {
+       "question": "¿En qué año se abolió la esclavitud en los Estados Unidos?",
+       "response": "1865"
+    },
+    {
+       "question": "¿Quién fue el primer presidente de Colombia?",
+       "response": "Simón Bolívar"
+    },
+    {
+       "question": "¿Qué civilización construyó las pirámides de Giza?",
+       "response": "La egipcia"
+    },
+    {
+       "question": "¿En qué ciudad se firmó la Declaración de la Independencia de los Estados Unidos?",
+       "response": "Filadelfia"
+    },
+    {
+       "question": "¿Cuál es la fórmula química del agua?",
+       "response": "H2O"
+    },
+    {
+       "question": "¿Cómo se llama la fuerza que mantiene a la Tierra en órbita alrededor del Sol?",
+       "response": "La gravedad"
+    },
+    {
+       "question": "¿Cómo se llama el proceso por el cual las plantas convierten la luz solar en energía?",
+       "response": "La fotosíntesis"
+    },
+    {
+       "question": "¿En qué país se escribió la epopeya El Poema del Mío Cid?",
+       "response": "España"
+    },
+    {
+       "question": "¿Quién ganó el Premio Nobel de Literatura en 2023?",
+       "response": "Annie Ernaux"
+    },
+    {
+       "question": "¿En qué estilo artístico se pintó el cuadro La Gioconda?",
+       "response": "Renacimiento"
+    },
+    {
+       "question": "¿Quién es el escultor de la obra El David?",
+       "response": ""
+    },
+    {
+       "question": "¿Como se llama el mejor TEAM de FreFire?",
+       "response": "X-fly"
+        
     
 }
 ]
