@@ -8,7 +8,7 @@ const handler = async (m, {conn, text, command}) => {
   const mensaje = mensajes[Math.floor(Math.random() * mensajes.length)];
   conn.sendMessage(m.chat, {image: {url: url}, caption: mensaje}, {quoted: m});
 };
-handler.command = /^(reglasX-FLY||X-FLY|REGLASX-FLY|reglasx-fly)$/i;
+handler.command = /^(reglas||X-FLY|REGLASX-FLY|reglasx-fly)$/i;
 handler.tags = ['dormir'];
 handler.help = ['dormir'];
 export default handler;
