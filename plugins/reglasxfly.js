@@ -2,8 +2,8 @@ const handler = async (m, {conn, text, command}) => {
   const yh = global.lolia;
   const url = yh[Math.floor(Math.random() * yh.length)];
   const mensajes = [
-    '_*X-FLY*_',
-    '_*X-FLY*_',
+    '*Es negro hombre, si llevan mujer, cámbiese a hombre por fa*',
+    '*Es negro hombre, si llevan mujer, cámbiese a hombre por fa*',
   ];
   const mensaje = mensajes[Math.floor(Math.random() * mensajes.length)];
   conn.sendMessage(m.chat, {image: {url: url}, caption: mensaje}, {quoted: m});
