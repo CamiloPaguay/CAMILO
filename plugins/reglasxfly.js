@@ -14,6 +14,6 @@ handler.help = ['dormir'];
 export default handler;
 
 global.lolia = [
-  'https://i.ibb.co/mFcySDv/Whats-App-Image-2024-04-24-at-3-40-03-AM.jpg',
-  'https://i.ibb.co/mFcySDv/Whats-App-Image-2024-04-24-at-3-40-03-AM.jpg',
+  'https://i.ibb.co/WVrwnCk/Whats-App-Image-2024-04-30-at-9-52-35-PM.jpg',
+  'https://i.ibb.co/WVrwnCk/Whats-App-Image-2024-04-30-at-9-52-35-PM.jpg',
 ];
