@@ -20,7 +20,7 @@ m.react('🕒')
   } catch (ee1) {
   try {
     const dataF = await tiktok.v1(args[0]);
-    const desc1 = `_🍁  ᩭ✎Tiktok sin marca de agua descargado con éxito_`;
+    const desc1 = `_*< DESCARGAS - TIKTOK />*_`;
     await conn.sendMessage(m.chat, {video: {url: dataF.play}, caption: desc1}, {quoted: m});
   } catch (e1) {
     try {
@@ -37,7 +37,7 @@ m.react('🕒')
         try {
           const {author: {nickname}, video, description} = await tiktokdl(args[0]);
           const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd;
-          const cap = `_🍁  ᩭ✎Tiktok sin marca de agua descargado con éxito_`;
+          const cap = `_*< DESCARGAS - TIKTOK />*_`;
           await conn.sendMessage(m.chat, {video: {url: url}, caption: cap}, {quoted: m});
         } catch {
           throw `_*< DESCARGAS - TIKTOK />*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
