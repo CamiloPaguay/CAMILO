@@ -12,7 +12,7 @@ global.confirmCode = ""
 
 global.owner = [
   ['573178454976', 'May - Creador', true],
-  ['+573145456409', 'Nuevo propietario', true],
+  ['+573234745757', 'Nuevo propietario', true],
 ];
 
 global.suittag = ['5219993404349'];
